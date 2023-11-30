@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".activity.ContactActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_quaylai">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/txtChangePass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Liên Hệ"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold">
+
+    </TextView>
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:inputType="textPersonName"
+                android:padding="16dp"
+                android:id="@+id/HovaTen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Họ và Tên"/>
+
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Email"/>
+
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:inputType="text"
+                android:padding="16dp"
+                android:id="@+id/txtNoiDungTinNhan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Nội dung tin nhăn"/>
+
+
+        </FrameLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnUpdatePassword"
+            android:layout_marginTop="16dp"
+            android:text="Gửi Tin Nhắn"
+
+            android:background="@drawable/background_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
